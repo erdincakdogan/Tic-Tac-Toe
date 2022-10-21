@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Finger Paint', cursive;
+}
+
+.App {
+  background: #f3b18c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 22px;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 65px;
+  color: #0026ed;
+}
+/*create table structure*/
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+/* create cells style */
+.cell {
+  background-color: #ffffff;
+  width: 80px;
+  height: 80px;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  user-select: none;
+}
+
+.x-filled {
+  color: red;
+}
+
+.o-filled {
+  color: blue;
+}
+/*hover cell*/
+.mouse-over-empty {
+  background-color: #8c8c8c;
+}
+
+.mouse-over-filled-x {
+  background-color: red;
+}
+
+.mouse-over-filled-o {
+  background-color: blue;
+}
+/*---*/
+
+/* footer styles*/
+.game-footer {
+  height: 10px;
+}
+.x-wins-footer {
+  color: red;
+}
+
+.o-wins-footer {
+  color: blue;
+}
+/*---*/
